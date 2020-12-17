@@ -11,11 +11,11 @@ Note here we have added "-resized" at the end.
 
 Next we want to create an Lambda function from scratch, "thumbnail-image" and we create a new execution role as per best practice.
 Once this has been created we want to add an event trigger, and this is the source bucket we created earlier and Event type is 'All object create events'.
-You will also want to change the Handlet to CreateThumbnail.handler:
+You will also want to change the Handler to CreateThumbnail.handler:
 
 ![Trigger](https://user-images.githubusercontent.com/68379635/102214532-54195c80-3ed0-11eb-9f60-8b263fe76e39.PNG)
 
-Now we want to upload our zip folder to the function from another S3 bucket where we store our code:
+Now we want to upload our zip folder to the Lambda function from another S3 bucket where we store our code:
 
 ![Zip](https://user-images.githubusercontent.com/68379635/102215430-9db67700-3ed1-11eb-8842-d8df4eee7fca.PNG)
 
